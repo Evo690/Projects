@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d4mp4</title>
+</head>
+    <script>
+        function sin(a) {
+        let b = a*(Math.PI/180)
+        let c = Math.sin(b)
+        return c
+        
+    }  
+      function cos(a) {
+        let b = a*(Math.PI/180)
+        let c = Math.cos(b)
+        return c
+        
+    }
+    function tan(a) {
+        let b = a*(Math.PI/180)
+        let c = Math.sin(b)/Math.cos(b)
+        return c
+        
+    }
+
+    </script>
+<link rel="stylesheet" href="style.css">
+<H1>basic calculator</H1>
+<body>
+    <div>
+    <button onclick="ts.value += '1' ">1</button>    
+    <button onclick="ts.value += '2' ">2</button>        
+    <button onclick="ts.value += '3' ">3</button>        
+    <button onclick="ts.value += '4' ">4</button>        
+    <button onclick="ts.value += '5' ">5</button>        
+    <button onclick="ts.value += '6' ">6</button>        
+    <button onclick="ts.value += '7' ">7</button>        
+    <button onclick="ts.value += '8' ">8</button>        
+    <button onclick="ts.value += '9' ">9</button>        
+    <button onclick="ts.value += '0' ">0</button>        
+    <button onclick="ts.value += '*' ">*</button>        
+    <button onclick="ts.value += '/' ">/</button>        
+    <button onclick="ts.value += '+' ">+</button>        
+    <button onclick="ts.value += '-' ">-</button>        
+    <button onclick="ts.value = eval(ts.value)">=</button>        
+    </div>
+    <div style="margin: 10px;">
+        <input type="text" id="ts" >
+    </div>
+    <h1>exponiation</h1>
+<div class="expo">
+    <input id="q1" type="text">
+    <input id="q2" type="text" placeholder="to power">
+    <button onclick="w1.value = q1.value**q2.value">calculate</button>
+    <input type="text" id="w1">
+</div>
+<h1>Trigno calculator</h1>
+<div class="trigno">
+    <input id="f1" type="text" placeholder="enter angle in degree">
+    <button onclick="f1.value= sin(f1.value)">sin</button>
+    <button onclick="f1.value= cos(f1.value)">cos</button>
+    <button onclick="f1.value= tan(f1.value)">tan</button>
+</div>
+</body>
+
+</html>
